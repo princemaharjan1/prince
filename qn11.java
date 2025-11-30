@@ -26,23 +26,29 @@ public class qn11
         Scanner rr = new Scanner(System.in);
          System.out.println("income");
         income=rr.nextInt();
-       if(income <=500000){
+       if(income >0 && income <=500000){
          B = "A0";  
+         
         }
-         else if(income <=700000){
+         else if(income >500000 && income <=700000){
          B = "A1";  
+        
         }
-         else if(income <=1000000){
+         else if(income >700000 && income <=1000000){
          B = "A2";  
+        
         }
-         else if(income <=2000000){
+         else if(income >1000000 && income <=2000000){
          B = "A3";  
+        
         }
-          else if(income <=5000000){
+          else if(income >2000000 && income <=5000000){
          B = "A4";  
+         
         }
           else if(income >5000000){
          B = "A5";  
+         
         }
         else 
         {
@@ -52,34 +58,55 @@ public class qn11
      
         switch(B) {
             case "A5":
-              extra1 = income * 0.39f;
+                income= income - 5000000;
+              extra1 = income * 39/100f;
                 System.out.println("income tax for uptoo");
-                
+                extra2 = 1135000;
+                extra3 = 335000;
+                extra4 = 35000;
+                extra5 = 15000;
+                extra6 = 5000;
+                break;
                  case "A4":
-                
-                 extra2 = income * 0.36f;
+                income= income - 2000000;
+                 extra2 = income * 36/100f;
                 System.out.println("income tax for uptoo");
+                extra3 = 335000;
+                extra4 = 35000;
+                extra5 = 15000;
+                extra6 = 5000;
+                break;
               case "A3":
-               
-                  extra3 = income * 0.30f;
+               income= income - 1000000;
+                  extra3 = income * 30 /100f;
                 System.out.println("income tax for uptoo");
-                case "A2":
-                extra4 = income * 0.20f;
-                System.out.println("income tax for uptoo");
+                extra4 = 35000;
+                extra5 = 15000;
+                extra6 = 5000;
+                break;
                 
+                case "A2":
+                    income= income - 700000;
+                extra4 = income * 20 /100f;
+                System.out.println("income tax for uptoo");
+                 extra5 = 15000;
+                extra6 = 5000;
+                break;
                  case "A1":
-             
-                 extra5 = income * 0.10f;
+             income= income - 500000;
+                 extra5 = income * 10/100f;
+                   extra6 = 5000;
                  
                 System.out.println("income tax for uptoo");
-                
+                break;
                  case "A0":
-                     extra6 = income * 0.01f;
+                     
+                     extra6 = income * 1/100f;
                 System.out.println("income tax for uptoo");
                 break;
                 default :
                     System.out.println("invalid number");
-                    
+                    break;
                 
             
         }
