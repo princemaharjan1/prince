@@ -7,29 +7,17 @@
  */
 public class ko5
 {
+ 
     public static void main(String[] args){
-    int i=1;
-    int j;
-    int k,l;
-    do {
-    
-             
-      for (j = 1 ;j<=i;j++){
-          for(k = 5;k>=1;k--){
-             System.out.print(" ");
-             l = k-1;
-             
-             if(k==l){
-                 break;
-             }
-             
-            }
-              System.out.print(j);
-            }
-         
-       i++;
-     
-    System.out.println("");
-    }while(i<=5);
-}
+    for (int i=1;i<=5;i++){
+            for(int k=5;k>=i;k--){
+    System.out.print(" ");
+    }
+        for (int j=1;j<=i;j++){
+    System.out.print(j);
+    }
+    System.out.println();    
+    }
+    }
+
 }
