@@ -5,7 +5,7 @@
  * @author (your name)
  * @version (a version number or a date)
  */
-public class workshopko6
+public class workshop_week6_1
 {
     public static void main(String[] args){
         int[] st1;

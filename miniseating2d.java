@@ -5,7 +5,7 @@
  * @author (your name)
  * @version (a version number or a date)
  */
-public class seatingko6ko
+public class miniseating2d
 {
     public static void main()
     {

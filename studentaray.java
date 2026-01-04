@@ -6,7 +6,7 @@ import java.util.Scanner;
  * @author (your name)
  * @version (a version number or a date)
  */
-public class kostudentdynamic
+public class studentaray
 {public static void main(String[] args){
    
      String[] students = {"saroj","Sshant","ujjwal","rabina","Sandesh"};

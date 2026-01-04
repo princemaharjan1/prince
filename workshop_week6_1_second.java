@@ -5,7 +5,7 @@
  * @author (your name)
  * @version (a version number or a date)
  */
-public class ko6ko2arkowala
+public class workshop_week6_1_second
 {public static void main(String[] args){
     int[][] first ;
     first = new int[2][2];

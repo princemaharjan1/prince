@@ -6,7 +6,7 @@ import java.util.Scanner;
  * @author (your name)
  * @version (a version number or a date)
  */
-public class positiveornegative
+public class positiveornegative_orzero
 {   public static void main(String[] args){
         int a;
         Scanner scan = new Scanner(System.in);

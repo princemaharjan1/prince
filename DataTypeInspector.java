@@ -5,7 +5,7 @@
  * @author (your name)
  * @version (a version number or a date)
  */
-public class datatypeinspector
+public class DataTypeInspector
 {
     public static void main(String[] args){
         byte bit1;

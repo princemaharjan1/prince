@@ -5,7 +5,7 @@
  * @author (your name)
  * @version (a version number or a date)
  */
-public class defaultvalues
+public class Defaultvalues
 {
      byte bit1;
         short short1;
@@ -17,7 +17,7 @@ public class defaultvalues
         char char1;
         String string1;
         public static void main(String[] args){
-            defaultvalues b1= new defaultvalues();
+            Defaultvalues b1= new Defaultvalues();
        System.out.println(b1.bit1);
        System.out.println(b1.short1);
        System.out.println(b1.int1);

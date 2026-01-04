@@ -6,7 +6,7 @@ import java.util.Scanner;
  * @author (your name)
  * @version (a version number or a date)
  */
-public class ko9
+public class workshop_week5_9
 {
     public static void main(String[] args){
         /*int abc;

@@ -6,7 +6,8 @@ import java.util.Scanner;
  * @author (your name)
  * @version (a version number or a date)
  */
-public class senarioko6
+public class minibookcorner
+
 {
     public static void main(String[] args){
         String[] categories = {"Fiction", "Nepali"};

@@ -19,5 +19,10 @@ public class wokshop8main
         int fi=calc.fixednum1(1,2);
         System.out.println(fi);
         calculator.test1(12,21);
+        
+        // workshop
+       
+        
+        
     }
 }

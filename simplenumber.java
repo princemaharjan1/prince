@@ -5,7 +5,7 @@
  * @author (your name)
  * @version (a version number or a date)
  */
-public class ko6kosimplenumber
+public class simplenumber
 {
     public static void main(String[] args){
         int high=0,low=0;
