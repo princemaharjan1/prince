@@ -9,18 +9,9 @@ import java.util.*;
  */
 public class question7
 {
-    public static void main(String[] args){
-        Scanner scan = new Scanner(System.in);
-        String PhoneNumber = scan.nextLine();
-        boolean Checker = PhoneNumber.matches("9[7/8]\\d{8}");
-        if(Checker == true){
-            System.out.println("matches");
-        }
-        else 
-        {
-            System.out.println("no matches");
-        }
-        
-        
-        }
+    public static boolean isValidCitizenship(String VC) {
+    if (VC == null) return false;
+
+    return VC.matches("\\d{2}-\\d{7}");
+}
     }

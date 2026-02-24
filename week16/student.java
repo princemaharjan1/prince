@@ -62,7 +62,7 @@ public class student
     public void setPhone(String newPhone){
         this.Phone= newPhone;
     }
-    public void getNameInitials(){
+    public String getNameInitials(){
         String StringTaker = getName();
         String[] StringSplitter = StringTaker.split(" ");
         StringBuilder Adder = new StringBuilder();
@@ -70,11 +70,14 @@ public class student
             String FirstLetter = x.substring(0,1).toUpperCase();
             Adder = Adder.append(FirstLetter).append(".");
         }
-        
+        String adder = Adder.toString();
+        return adder;
     }
      @Override
     public String toString() {
         return String.format("%s | %d | Grade %d | %s",Name, Age, Grade, School);
     }
-
+    public boolean isValidCitizenship() {
+    return ValidateCitizen.isValidCitizenship(this.CitizenShip);
+}
 }

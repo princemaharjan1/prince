@@ -9,8 +9,7 @@ package week16;
  */
 public class CensusProcessor
 {
-   
-        public static student[] parseCSV(String[] csvData){
+    public static student[] parseCSV(String[] csvData){
            student[] students = new student[csvData.length -1];
            for(int i = 1;i<csvData.length ; i++){
                 String[] SplitedData = csvData[i].split(",");
@@ -26,4 +25,60 @@ public class CensusProcessor
            }
            return students;
         }
+        public static student[] findBySchool(student[] students, String school) {
+
+    // First count matching students
+    int count = 0;
+    for (student s : students) {
+        if (s.getSchool().equalsIgnoreCase(school)) {
+            count++;
+        }
+    }
+
+    // Create array of correct size
+    student[] result = new student[count];
+
+    int index = 0;
+    for (student s : students) {
+        if (s.getSchool().equalsIgnoreCase(school)) {
+            result[index++] = s;
+        }
+    }
+
+    return result;
+}
+public static int countByGrade(student[] students, int grade) {
+
+    int count = 0;
+
+    for (student s : students) {
+        if (s.getGrade() == grade) {
+            count++;
+        }
+    }
+
+    return count;
+}
+public static double averageAge(student[] students) {
+
+    int total = 0;
+
+    for (student s : students) {
+        total += s.getAge();
+    }
+
+    return (double) total / students.length;
+}
+public static student findLongestName(student[] students) {
+
+    student longest = students[0];
+
+    for (int i = 1; i < students.length; i++) {
+        if (students[i].getName().length() > longest.getName().length()) {
+            longest = students[i];
+        }
+    }
+
+    return longest;
+}
 }
