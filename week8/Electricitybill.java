@@ -7,12 +7,12 @@ package week8;
  * @author (your name)
  * @version (a version number or a date)
  */
-public class electricitybill
+public class Electricitybill
 {
     String consumerName;
     int unitsConsumed;
     
-    public electricitybill(String consumerName,int unitsConsumed){
+    public Electricitybill(String consumerName,int unitsConsumed){
         this.consumerName=consumerName;
         this.unitsConsumed=unitsConsumed;
     }

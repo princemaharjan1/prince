@@ -18,7 +18,7 @@ public class teacher extends person
     this.Subject = Subject;
     this.bonus = bonus;
 }
-    public double calculateAnnualsalary(){
+public double calculateAnnualsalary(){
         
         return super.calculateAnnualsalary() + bonus;
     }
